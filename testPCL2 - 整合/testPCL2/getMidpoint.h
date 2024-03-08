@@ -1,0 +1,1 @@
+void getMidpoint(char pcdname1[30], char pcdname2[30], char savename[30]);

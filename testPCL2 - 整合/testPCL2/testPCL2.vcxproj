@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0D9C1B8F-8863-48B0-918C-BE2A225BB889}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>testPCL2</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PCL1.8.0Debug" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BoundaryExtr.h" />
+    <ClInclude Include="BoundingBox.h" />
+    <ClInclude Include="calDistance.h" />
+    <ClInclude Include="conditionRemove.h" />
+    <ClInclude Include="configuration.h" />
+    <ClInclude Include="CPCsegmen.h" />
+    <ClInclude Include="createNormal.h" />
+    <ClInclude Include="curvature.h" />
+    <ClInclude Include="edge_weight_computer.h" />
+    <ClInclude Include="FeaturePExtr.h" />
+    <ClInclude Include="filterLabel.h" />
+    <ClInclude Include="getMidpoint.h" />
+    <ClInclude Include="getNormal.h" />
+    <ClInclude Include="getX.h" />
+    <ClInclude Include="graphCreate.h" />
+    <ClInclude Include="graph_builder.h" />
+    <ClInclude Include="Harris.h" />
+    <ClInclude Include="JudgeDir.h" />
+    <ClInclude Include="LabelExtr.h" />
+    <ClInclude Include="MatRead.h" />
+    <ClInclude Include="MatReverse.h" />
+    <ClInclude Include="MatSave.h" />
+    <ClInclude Include="MatTrans.h" />
+    <ClInclude Include="measurement.h" />
+    <ClInclude Include="merge.h" />
+    <ClInclude Include="NDT.h" />
+    <ClInclude Include="nearest_neighbors_graph_builder.h" />
+    <ClInclude Include="pcd_BiFilter.h" />
+    <ClInclude Include="pcd_BilFilter.h" />
+    <ClInclude Include="pcd_clustering.h" />
+    <ClInclude Include="pcd_denoising.h" />
+    <ClInclude Include="pcd_display.h" />
+    <ClInclude Include="pcd_display2.h" />
+    <ClInclude Include="pcd_display3.h" />
+    <ClInclude Include="pcd_display4.h" />
+    <ClInclude Include="pcd_display5.h" />
+    <ClInclude Include="pcd_GausFilter.h" />
+    <ClInclude Include="pcd_LSmethod.h" />
+    <ClInclude Include="pcd_NorFilter.h" />
+    <ClInclude Include="peakExtra.h" />
+    <ClInclude Include="PLYtoPCD.h" />
+    <ClInclude Include="point_cloud_graph.h" />
+    <ClInclude Include="pretreatment.h" />
+    <ClInclude Include="printMatrix.h" />
+    <ClInclude Include="reconstruction.h" />
+    <ClInclude Include="RegAlgorithm.h" />
+    <ClInclude Include="regCut.h" />
+    <ClInclude Include="Registration.h" />
+    <ClInclude Include="pcd_rotation.h" />
+    <ClInclude Include="pcd_sampling.h" />
+    <ClInclude Include="pcd_Sfilter.h" />
+    <ClInclude Include="pois_recons.h" />
+    <ClInclude Include="regPosRegulation.h" />
+    <ClInclude Include="reverse.h" />
+    <ClInclude Include="reverseX.h" />
+    <ClInclude Include="reverseY.h" />
+    <ClInclude Include="reverseZ.h" />
+    <ClInclude Include="searchExtremum.h" />
+    <ClInclude Include="searchIndex.h" />
+    <ClInclude Include="searchEnvelope.h" />
+    <ClInclude Include="searchPoint.h" />
+    <ClInclude Include="Sfilter2.h" />
+    <ClInclude Include="signDir.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="surface.h" />
+    <ClInclude Include="symmetrize.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TransCenter.h" />
+    <ClInclude Include="Upright1.h" />
+    <ClInclude Include="Upright2.h" />
+    <ClInclude Include="Upright3.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BoundaryExtr.cpp" />
+    <ClCompile Include="BoundingBox.cpp" />
+    <ClCompile Include="calDistance.cpp" />
+    <ClCompile Include="conditionRemove.cpp" />
+    <ClCompile Include="configuration.cpp" />
+    <ClCompile Include="CPCsegmen.cpp" />
+    <ClCompile Include="createNormal.cpp" />
+    <ClCompile Include="curvature.cpp" />
+    <ClCompile Include="Dijkstra.cpp" />
+    <ClCompile Include="FeaturePExtr.cpp" />
+    <ClCompile Include="filterLabel.cpp" />
+    <ClCompile Include="getMidpoint.cpp" />
+    <ClCompile Include="getNormal.cpp" />
+    <ClCompile Include="getX.cpp" />
+    <ClCompile Include="graphCreate.cpp" />
+    <ClCompile Include="Harris.cpp" />
+    <ClCompile Include="JudgeDir.cpp" />
+    <ClCompile Include="LabelExtr.cpp" />
+    <ClCompile Include="MatRead.cpp" />
+    <ClCompile Include="MatReverse.cpp" />
+    <ClCompile Include="MatSave.cpp" />
+    <ClCompile Include="MatTrans.cpp" />
+    <ClCompile Include="measurement.cpp" />
+    <ClCompile Include="merge.cpp" />
+    <ClCompile Include="NDT.cpp" />
+    <ClCompile Include="pcd_clustering.cpp" />
+    <ClCompile Include="pcd_denoising.cpp" />
+    <ClCompile Include="pcd_BilFilter.cpp" />
+    <ClCompile Include="pcd_display.cpp" />
+    <ClCompile Include="pcd_display2.cpp" />
+    <ClCompile Include="pcd_display3.cpp" />
+    <ClCompile Include="pcd_display4.cpp" />
+    <ClCompile Include="pcd_display5.cpp" />
+    <ClCompile Include="pcd_GausFilter.cpp" />
+    <ClCompile Include="pcd_LSmethod.cpp" />
+    <ClCompile Include="pcd_NorFilter.cpp" />
+    <ClCompile Include="peakExtra.cpp" />
+    <ClCompile Include="PLYtoPCD.cpp" />
+    <ClCompile Include="pretreatment.cpp" />
+    <ClCompile Include="printMatrix.cpp" />
+    <ClCompile Include="reconstruction.cpp" />
+    <ClCompile Include="RegAlgorithm.cpp" />
+    <ClCompile Include="regCut.cpp" />
+    <ClCompile Include="Registration.cpp" />
+    <ClCompile Include="pcd_rotation.cpp" />
+    <ClCompile Include="pcd_sampling.cpp" />
+    <ClCompile Include="pcd_Sfilter.cpp" />
+    <ClCompile Include="pcd_BiFIlter.cpp" />
+    <ClCompile Include="pois_recons.cpp" />
+    <ClCompile Include="regPosRegulation.cpp" />
+    <ClCompile Include="reverse.cpp" />
+    <ClCompile Include="reverseX.cpp" />
+    <ClCompile Include="reverseY.cpp" />
+    <ClCompile Include="reverseZ.cpp" />
+    <ClCompile Include="searchExtremum.cpp" />
+    <ClCompile Include="searchIndex.cpp" />
+    <ClCompile Include="searchEnvelope.cpp" />
+    <ClCompile Include="searchPoint.cpp" />
+    <ClCompile Include="Sfilter2.cpp" />
+    <ClCompile Include="signDir.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="surface.cpp" />
+    <ClCompile Include="symmetrize.cpp" />
+    <ClCompile Include="TransCenter.cpp" />
+    <ClCompile Include="Upright1.cpp" />
+    <ClCompile Include="Upright2.cpp" />
+    <ClCompile Include="Upright3.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

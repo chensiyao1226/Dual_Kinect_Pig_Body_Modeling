@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_sampling.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_Sfilter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_NorFilter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_display.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_BiFilter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_BilFilter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_denoising.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_GausFilter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_clustering.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_LSmethod.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pois_recons.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_rotation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CPCsegmen.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LabelExtr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="filterLabel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingBox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Sfilter2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Registration.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MatTrans.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="peakExtra.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TransCenter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MatSave.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MatRead.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="reverseZ.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_display2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="conditionRemove.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="signDir.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="JudgeDir.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NDT.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_display3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MatReverse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="symmetrize.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Harris.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="merge.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PLYtoPCD.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="surface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundaryExtr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="searchExtremum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_display4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graphCreate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="edge_weight_computer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="nearest_neighbors_graph_builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="point_cloud_graph.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="graph_builder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="searchIndex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="printMatrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="curvature.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FeaturePExtr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="searchPoint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="searchEnvelope.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pcd_display5.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="getMidpoint.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="getX.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="calDistance.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="reverseY.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Upright1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Upright2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="getNormal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="createNormal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Upright3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="reverseX.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="reverse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="configuration.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pretreatment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="regPosRegulation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="regCut.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RegAlgorithm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="reconstruction.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="measurement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_sampling.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_Sfilter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_NorFilter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_display.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_BiFIlter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_BilFilter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_denoising.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_GausFilter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_clustering.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_LSmethod.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pois_recons.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_rotation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CPCsegmen.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LabelExtr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="filterLabel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Sfilter2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Registration.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MatTrans.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="peakExtra.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TransCenter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MatSave.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MatRead.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="reverseZ.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_display2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="conditionRemove.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="JudgeDir.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="signDir.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NDT.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_display3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MatReverse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="symmetrize.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Harris.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="merge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PLYtoPCD.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="surface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundaryExtr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="searchExtremum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_display4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graphCreate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Dijkstra.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="searchIndex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="printMatrix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="curvature.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FeaturePExtr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="searchPoint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="searchEnvelope.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pcd_display5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="getMidpoint.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="getX.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="calDistance.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="reverseY.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Upright2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Upright1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="getNormal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="createNormal.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Upright3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="reverseX.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="reverse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pretreatment.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="configuration.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="regPosRegulation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="regCut.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RegAlgorithm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="reconstruction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="measurement.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

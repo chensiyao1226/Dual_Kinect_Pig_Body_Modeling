@@ -1,0 +1,16 @@
+﻿生成启动时间为 2019/5/15 13:14:40。
+     1>项目“c:\Users\chen\documents\visual studio 2013\Projects\calibration\calibration\calibration.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\\inc" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\chen\documents\visual studio 2013\projects\calibration\calibration\main.cpp(246): warning C4244: “初始化”: 从“clock_t”转换到“float”，可能丢失数据
+     1>c:\users\chen\documents\visual studio 2013\projects\calibration\calibration\main.cpp(249): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\chen\documents\visual studio 2013\projects\calibration\calibration\main.cpp(54): warning C4101: “m_pBodyFrameReader”: 未引用的局部变量
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\chen\documents\visual studio 2013\Projects\calibration\Debug\calibration.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\\Lib\x86" opencv_calib3d340d.lib opencv_core340d.lib opencv_dnn340d.lib opencv_features2d340d.lib opencv_flann340d.lib opencv_highgui340d.lib opencv_imgcodecs340d.lib opencv_imgproc340d.lib opencv_ml340d.lib opencv_objdetect340d.lib opencv_photo340d.lib opencv_shape340d.lib opencv_stitching340d.lib opencv_superres340d.lib opencv_video340d.lib opencv_videoio340d.lib opencv_videostab340d.lib kinect20.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\chen\documents\visual studio 2013\Projects\calibration\Debug\calibration.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\chen\documents\visual studio 2013\Projects\calibration\Debug\calibration.lib" /MACHINE:X86 Debug\main.obj
+     1>opencv_highgui340d.lib(opencv_highgui340d.dll) : fatal error LNK1112: 模块计算机类型“x64”与目标计算机类型“X86”冲突
+     1>已完成生成项目“c:\Users\chen\documents\visual studio 2013\Projects\calibration\calibration\calibration.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.06

@@ -1,0 +1,1 @@
+void getNormal(char pcdname[30]);
